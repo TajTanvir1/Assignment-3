@@ -38,8 +38,9 @@
    </style>
 </head>
 
-<body>
-   <!-- Nav section start -->
+<body class="font-manrope">
+   <div class="container mx-auto lg:px-10 px-4 my-8">
+      <!-- Nav section start -->
    <nav>
       <div class="navbar bg-base-100">
          <div class="navbar-start">
@@ -55,11 +56,11 @@
                <li><a>Contact</a></li>
              </ul>
            </div>
-           <a class="btn btn-ghost text-xl">Hockey<span>’</span>s</a>
+           <a class="text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
          </div>
          <div class="navbar-center hidden lg:flex">
-           <ul class="menu menu-horizontal px-1">
-            <li><a>Home</a></li>
+           <ul class="menu menu-horizontal px-1 text-base">
+            <li class="text-[#FF4240] font-bold"><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>Pages</a></li>
             <li><a>Blog</a></li>
@@ -67,8 +68,8 @@
            </ul>
          </div>
          <div class="navbar-end">
-            <i class="fa-solid fa-magnifying-glass"></i>
-           <a class="btn">Get Ticket</a>
+            <i class="fa-solid fa-magnifying-glass px-6 hidden lg:inline"></i>
+           <a class="btn bg-[#FF4240] text-white px-4 lg:py-4 lg:px-6">Get Ticket</a>
          </div>
        </div>
    </nav>
@@ -76,7 +77,46 @@
    <!-- Header Section Start -->
    <Header>
       <!-- Banner Section -->
-
+      <div class="carousel w-full mt-12 h-[200px] lg:h-auto relative">
+         <!-- Slider 1 -->
+         <div id="slide1" class="carousel-item relative w-full">
+           <img src="Images/1.png" class="w-full" />
+           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+             <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+           </div>
+         </div> 
+         <!-- Slider 2 -->
+         <div id="slide2" class="carousel-item relative w-full">
+           <img src="Images/1.png" class="w-full" />
+           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+             <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+           </div>
+         </div> 
+         <!-- Slider 3 -->
+         <div id="slide3" class="carousel-item relative w-full">
+           <img src="Images/1.png" class="w-full" />
+           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+             <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+           </div>
+         </div> 
+         <!-- Slider 4 -->
+         <div id="slide4" class="carousel-item relative w-full">
+           <img src="Images/1.png" class="w-full" />
+           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+             <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
+             <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+           </div>
+         </div>
+         <!-- Banner Content -->
+       <div class="bg-[#131318] p-9 rounded-lg lg:w-1/2 absolute bottom-8 right-8">
+         <h3 class="text-white text-2xl font-extrabold">Meet all the heroes from the field</h3>
+         <p class="text-white mt-4">Meet all the heroes from the field Meet all the heroes from the field Meet all the heroes from the field</p>
+       </div>
+       </div>
+       
    </Header>
 
    <!-- Main Section Start -->
@@ -88,6 +128,7 @@
    <footer>
 
    </footer>
+   </div>
 </body>
 
 </html>
